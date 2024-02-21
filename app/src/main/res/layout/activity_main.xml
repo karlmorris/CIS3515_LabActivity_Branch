@@ -10,28 +10,42 @@
         android:id="@+id/displayTextView"
         android:layout_width="411dp"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="84dp"
         android:gravity="center"
         android:text="Hello World!"
         android:textSize="24sp"
-        tools:layout_editor_absoluteY="53dp" />
+        app:layout_constraintBottom_toTopOf="@+id/nameEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/clickMeButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="296dp"
         android:text="Click Me"
-        tools:layout_editor_absoluteX="154dp"
-        tools:layout_editor_absoluteY="340dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/nameEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="101dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="96dp"
         android:ems="10"
         android:hint="Enter your name"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        tools:layout_editor_absoluteX="101dp"
-        tools:layout_editor_absoluteY="240dp" />
+        app:layout_constraintBottom_toTopOf="@+id/clickMeButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
